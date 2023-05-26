@@ -1,0 +1,418 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+/* font-family: 'Gamja Flower', cursive; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.text {
+    position: fixed;
+    left: 30px;
+    top: 10px;
+    z-index: 500;
+    color: #aaa;
+}
+
+.fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 50px;
+}
+
+.slide-cont {
+    position: relative;
+    width: 100%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: 'Gamja Flower', cursive;
+}
+
+
+/* -------slide1------- */
+#slide1 .cont0 {
+    position: relative;
+    width: 36%;
+    height: 100%;
+}
+
+#slide1 .cont0 h1 {
+    position: absolute;
+    font-size: 60px;
+    color: #fff;
+    left: -50%;
+    top: 0;
+}
+
+#slide1 .cont0 img {
+    position: absolute;
+    left: 27%;
+    top: 46%;
+    width: 36%
+}
+
+#slide1-2 .cont2 {
+    position: relative;
+    width: 100%;height: 100%;
+}
+
+#slide1-2 .cont2 h1 {
+    position: absolute;
+    font-size: 55px;
+    color: #fff;
+    left: 14%;
+    top: 9%;
+}
+
+#slide1-3 .cont3 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#slide1-3 .cont3 p {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    font-size: 35px;
+    color: #fff;
+    text-shadow: 2px 3px 11px rgba(0, 0, 0, .5);
+}
+
+
+/*slide2 */
+#slide2 .cont0 {
+    position: relative;
+    width: 235px;
+    height: 100%;
+
+}
+
+#slide2 .cont0 img {
+    position: absolute;
+    width: 100%;
+    left: -500px;
+    top: 0;
+}
+
+#slide2-1 .cont1 p {
+    position: absolute;
+    font-size: 45px;
+    color: #111;
+    left: 25%;
+}
+
+#slide2-2 .cont2 {
+    position: relative;
+    width: 500px;
+}
+
+#slide2-2 .cont2 img {
+    position: absolute;
+    width: 100%;
+    right: -150px;
+    top: 530px;
+}
+
+#slide2-3 .cont3 {
+    position: relative;
+    width: 600px;
+}
+
+#slide2-3 .cont3 img {
+    position: absolute;
+    width: 100%;
+    transform: rotate(12deg);
+    right: -210px;
+    bottom: -800px;
+}
+
+#slide2-4 .cont4 p {
+    font-size: 45px;
+    color: #111;
+}
+
+/* slide3 */
+#slide3 .cont0 {
+    position: relative;
+    width: 28%;
+}
+
+#slide3 .cont0 img {
+    position: absolute;
+    width: 100%;
+    left: -280px;
+}
+
+#slide3-1 .cont1 {
+    position: relative;
+}
+
+#slide3-1 .cont1 p {
+    position: absolute;
+    font-size: 45px;
+    color: #222;
+    right: 70px;
+    top: 330px;
+}
+
+/* fish */
+#slide3-5 .cont0 img {
+    position: absolute;
+    width: 500px;
+    height: 850px;
+    left: 25%;
+    animation: fish 3s linear infinite both;
+}
+
+@keyframes fish {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+/* slide4 */
+#slide4 .cont0 {
+    position: relative;
+    width: 20%;
+}
+
+#slide4 .cont0 img {
+    position: absolute;
+    width: 100%;
+    animation: rang 3s linear infinite alternate-reverse;
+    left: -5vh;
+}
+
+@keyframes rang {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+#slide4-1 .cont1 {
+    position: relative;
+    height: 100%;
+}
+
+#slide4-1 .cont1 p {
+    position: absolute;
+    font-size: 80px;
+    color: #222;
+    left: 16%;
+    top: 25%;
+    text-align: center;
+}
+
+
+/* slide5 */
+
+#slide5 .cont0 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#slide5 .cont0 p {
+    position: absolute;
+    font-size: 65px;
+    color: #222;
+    left: 44%;
+    text-align: center;
+    top: 38%;
+    margin: 0 auto;
+}
+
+#slide5-1 .cont1 {
+    position: relative;
+    width: 23%;
+    height: 100%;
+}
+
+#slide5-1 .cont1 img {
+    position: absolute;
+    left: -35px;
+    top: 10%;
+    width: 100%;
+}
+
+/* slide6 */
+#slide6 .cont0 {
+    position: relative;
+}
+
+#slide6 .cont0 p {
+    position: absolute;
+    font-size: 40px;
+    color: #222;
+    text-align: center;
+    top: 30%;
+}
+
+#slide6-1 .cont1 .video {
+    position: relative;
+    top: 37%;
+    width: 100%;
+    padding-bottom: 56.25%;
+    z-index: 5;
+}
+
+#slide6-1 .cont1 .video iframe {
+    position: absolute;
+    left: 0%;
+    height: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+/* slide7 */
+#slide7 .cont0 {
+    position: relative;
+    width: 40%;
+}
+
+#slide7 .cont0 img {
+    position: absolute;
+    width: 100%;
+    left: 200px;
+    top: 200px;
+}
+
+#slide7-1 .cont1 {
+    position: relative;
+    width: 40%;
+}
+
+#slide7-1 .cont1 p {
+    position: absolute;
+    width: 100%;
+    left: -400px;
+    top: 90px;
+    font-size: 45px;
+    color: #222;
+    text-align: center;
+}
+
+/* slide8 */
+#slide8 .cont0 {
+    position: relative;
+}
+
+#slide8 .cont0 h1 {
+    position: absolute;
+    font-size: 60px;
+    color: #fff;
+    left: 500px;
+    top: 50px;
+    text-align: center;
+}
+
+#slide8-1 .cont1 {
+    position: relative;
+}
+
+#slide8-1 .cont1 p {
+    position: absolute;
+    font-size: 45px;
+    color: #fff;
+    left: 540px;
+    top: 250px;
+    text-align: center;
+}
+
+#slide8-2 .cont2 {
+    position: relative;
+}
+
+#slide8-2 .cont2 p {
+    position: absolute;
+    font-size: 45px;
+    color: #fff;
+    left: 640px;
+    top: 520px;
+    text-align: center;
+}
+
+#slide8-23 .cont22 {
+    position: relative;
+}
+
+#slide8-23 .cont22 p {
+    position: absolute;
+    font-size: 100px;
+    color: #fff;
+    left: 700px;
+    top: 600px;
+    text-align: center;
+}
+
+#slide8-3 .cont3 {
+    position: relative;
+}
+
+#slide8-3 .cont3 h3 {
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    left: 700px;
+    top: 600px;
+    text-align: center;
+}
+
+#slide8-33 .cont33 {
+    position: relative;
+}
+
+#slide8-33 .cont33 h1 {
+    position: absolute;
+    font-size: 150px;
+    color: #fff;
+    left: 700px;
+    top: 600px;
+    text-align: center;
+}
+
+#slide8-4 .cont4 {
+    position: relative;
+    width: 40%;
+}
+
+#slide8-4 .cont4 img {
+    position: absolute;
+    width: 100%;
+    left: -550px;
+    top: 35px;
+}

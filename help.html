@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plz.ver달고 짜고 행복한 꿈</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="text">0</div>
+
+    <div class="bgc" data-500="width:100%; left:0%;"
+        data-1000="width:70%; left:15%;" data-1500="background-color:rgb(247, 225, 174);"></div>
+
+
+
+    <!-- #slide-1 -->
+    <section id="slide1" class="slide"
+        data-0="background: url(img/bg1.png) no-repeat center 0; width:100%; height:100%; opacity:1;"
+        data-1000="opacity:0;">
+
+        <div class="slide-cont cont1">
+            <h1>우리집 강아지가 꾸는 꿈은 달고 짜고 행복한 꿈</h1>
+
+            <p>
+                여기 이 작고 하얗고 귀엽고 깜찍하고 암튼 엄청나게 소중한 강아지가 단 잠에 빠져있네요.<br> 어떤 꿈을 꾸고있는지, 한번 들여다 볼까용??
+            </p>
+            <img src="img/slp_rang.png" alt="잠자는 랑이">
+
+        </div>
+    </section>
+    <!-- //#slide-1 -->
+
+    
+
+
+    <script src="js/skrollr.min.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init();
+        let text = document.querySelector(".text")
+        window.addEventListener("scroll", function () {
+            let Wscroll = window.pageYOffset;
+            console.log(parseInt(Wscroll))
+            text.innerHTML = parseInt(Wscroll)
+        })
+    </script>
+</body>
+
+</html>
