@@ -287,7 +287,7 @@ p {
     top: 37%;
     width: 100%;
     padding-bottom: 56.25%;
-    z-index: 5;
+    z-index: 1000;
 }
 
 #slide6-1 .cont1 .video iframe {
@@ -415,4 +415,8 @@ p {
     width: 100%;
     left: -550px;
     top: 35px;
+}
+
+#slide8-4,#slide8-33,#slide8-3,#slide8-23,#slide8-2,#slide8-1,#slide8,#slide7-1,#slide7{
+    pointer-events: none;
 }
